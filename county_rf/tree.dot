@@ -1,0 +1,17 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Median Household Income <= 38362.5\nmse = 166.61\nsamples = 2953\nvalue = 15.29", fillcolor="#fcf3eb"] ;
+1 [label="Prescription Rate <= 192.2\nmse = 576.8\nsamples = 230\nvalue = 32.46", fillcolor="#f1b991"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="mse = 474.03\nsamples = 181\nvalue = 28.32", fillcolor="#f3c7a7"] ;
+1 -> 5 ;
+6 [label="mse = 642.15\nsamples = 49\nvalue = 49.21", fillcolor="#e58139"] ;
+1 -> 6 ;
+2 [label="Unemployment Rate <= 5.95\nmse = 105.79\nsamples = 2723\nvalue = 13.86", fillcolor="#fdf7f3"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="mse = 140.38\nsamples = 1246\nvalue = 16.52", fillcolor="#fceee5"] ;
+2 -> 3 ;
+4 [label="mse = 64.65\nsamples = 1477\nvalue = 11.57", fillcolor="#ffffff"] ;
+2 -> 4 ;
+}
